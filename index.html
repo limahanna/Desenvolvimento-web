@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>cadastro com validação dinamica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <main class="container">
+            <form id="form-cadastro" class="card">
+                <h2>criar conta </h2>
+
+            <div class="grupo-campo">
+                    <label for="nome">nome completo </label>
+                    <input type="text" id="nome completo" placeholder="digite seu nome" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email"
+                    placeholder="seu@email.com" required>
+
+                </div>
+
+                <div class="grupo-campo">
+                <label for="senha">senha</label>
+                <input type="password" id="senha"
+                placeholder="digite sua senha" required>
+
+               
+
+                <ul class="lista-requisitos">
+                    <li id="req-tamanho" class="requisito">ate 8 ou mais caracteristicas</li>
+                    <li id="req-maiuscula" class="requisito">pelo menos uma letra maiuscula</li>
+                    <li id="req-numero" class="requisito">pelo menos um numero</li>
+                    <li id="req-especial" class="requisito">pelo menos um  caractere especial (@,#, $, etc.)</li>
+                </ul>
+            </div>
+
+        <div class="grupo-campo">
+        <label for="confirmar-senha">confimar senha 
+        </label>
+        <input type="password" id="confirmar-senha"
+        placeholder="repita a senha" required>
+    </div>
+            <button type="submit" class="btn">finalizar cadastro</button>
+    </form>
+    </main>
+<script src="script.js"></script>
+
+</body>
+</html>
